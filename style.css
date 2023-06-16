@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+.panner {
+    height: 100vh;
+}
+.panner_inner {
+    height: 100%;   
+}
+.panner_inner_row {
+    height: 65%;
+    box-shadow: 0 2px 20px -5px rgba(0, 0, 0, 0.5);
+}
+.panner_inner_row_box {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px !important;
+}
+.text_card {
+    height: 100%;
+    background-color: rgb(132, 59, 205) !important;
+    border-radius: 0px !important;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: 70px !important;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+}
+.text_card h1 {
+    font-size: 50px;
+    letter-spacing: 1px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+.text_card span {
+    font-size: 40px;
+    font-weight: 200;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1px;
+    color: white;
+}
+.form_card {
+    width: 100% !important;
+    height: 100%;
+    z-index: 10;
+}
+.form-horizontal {
+    margin: 20px auto !important;
+    height: 100% !important;
+    width: 90% !important;
+}
+.form-group {
+    height: 100px;
+}
+.input_text {
+    height: 60px !important;
+    width: 100% !important;
+}
+.form-control {
+    height: 100%;
+    border-radius: 0px !important;
+    border: 2px solid black !important;
+    width: 100% !important;
+}
+.form-control:focus {
+    box-shadow: none !important;
+}
+.form-control::placeholder {
+    font-size: 18px !important;
+    font-family: 'Poppins', sans-serif !important;
+    letter-spacing: 1px;
+}
+.submit_btn {
+    font-size: 18px !important;
+    font-family: 'Poppins', sans-serif !important;
+    text-transform: uppercase !important;
+    color: white !important;
+    font-weight: 700 !important;
+    background-color: #070707 !important;
+    padding: 15px 60px !important;
+    border-radius: 0px !important;
+}
+.small_white_box {
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    position: absolute;
+    right: -30px;
+    top: 43%;
+    transform: rotate(45deg);
+}
+@media only screen and (max-width:480px) {
+    .panner {
+        height: 100vh;
+    }
+    .text_card, .form_card {
+        height: 100%;
+        z-index: 10;
+    }
+    .small_white_box {
+        top: 98%;
+        right: 45% !important;
+        width: 50px;
+        height: 50px;
+    }
+    .panner_inner_row {
+        margin: 0 auto !important;
+        height: 100%;
+        box-shadow: none;
+    }
+}
